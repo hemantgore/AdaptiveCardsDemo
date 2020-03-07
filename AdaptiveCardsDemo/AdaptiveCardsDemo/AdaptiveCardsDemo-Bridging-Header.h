@@ -3,3 +3,4 @@
 //
 
 #import <AdaptiveCards/ACFramework.h>
+#import "ADCResolver.h"

@@ -8,10 +8,13 @@
 import UIKit
 import SafariServices
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    var resolvers = ACOResourceResolvers.init();
     //MARK: - Lifecycle methods
     override func viewDidLoad() {
+        let resolver = ADCResolver.init();
+        resolvers?.setResourceResolver(resolver, scheme: "https")
             super.viewDidLoad()
         }
 
@@ -228,8 +231,7 @@ class ViewController: UIViewController {
             let cardParseResult = ACOAdaptiveCard.fromJson(jsonStr)
 
             let path: String = Bundle.main.path(forResource: "host_config", ofType: "json")!
-
-            if let hostConfig = try? String(contentsOfFile: path, encoding: String.Encoding.utf8), let parseResult = ACOHostConfig.fromJson(hostConfig), parseResult.isValid {
+            if let hostConfig = try? String(contentsOfFile: path, encoding: String.Encoding.utf8), let parseResult = ACOHostConfig.fromJson(hostConfig, resourceResolvers: resolvers), parseResult.isValid {
 
 
                 if((cardParseResult?.isValid)!) {
