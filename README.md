@@ -8,3 +8,4 @@ This sample project is to support MSFT's AdpativeCards lib. https://github.com/m
 #Sample Card JSON: Ref. Issue link.
 
 #Result:
+![Screenshot](Screenshot-AC-Result- V1.2.7.png)
