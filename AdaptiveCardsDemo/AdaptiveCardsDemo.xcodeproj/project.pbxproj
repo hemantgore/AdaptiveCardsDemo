@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1769570DAE9C0F30EC0DE0F1 /* Pods_AdaptiveCardsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC74DD8EA50A3C4F99AB4859 /* Pods_AdaptiveCardsDemo.framework */; };
 		2154701424135C47005BEFB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154701324135C47005BEFB0 /* AppDelegate.swift */; };
 		2154701624135C47005BEFB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154701524135C47005BEFB0 /* SceneDelegate.swift */; };
 		2154701824135C47005BEFB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154701724135C47005BEFB0 /* ViewController.swift */; };
 		2154701B24135C47005BEFB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2154701924135C47005BEFB0 /* Main.storyboard */; };
 		2154701D24135C49005BEFB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2154701C24135C49005BEFB0 /* Assets.xcassets */; };
 		2154702024135C49005BEFB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2154701E24135C49005BEFB0 /* LaunchScreen.storyboard */; };
+		2154702B24135F7F005BEFB0 /* host_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 2154702A24135F7F005BEFB0 /* host_config.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05B8CB8337AC19F9E736E340 /* Pods-AdaptiveCardsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdaptiveCardsDemo.debug.xcconfig"; path = "Target Support Files/Pods-AdaptiveCardsDemo/Pods-AdaptiveCardsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2154701024135C47005BEFB0 /* AdaptiveCardsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveCardsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2154701324135C47005BEFB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2154701524135C47005BEFB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,10 @@
 		2154701C24135C49005BEFB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2154701F24135C49005BEFB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2154702124135C49005BEFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2154702724135EDA005BEFB0 /* AdaptiveCardsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdaptiveCardsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2154702A24135F7F005BEFB0 /* host_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = host_config.json; sourceTree = "<group>"; };
+		31774C032B900AA521DD766F /* Pods-AdaptiveCardsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdaptiveCardsDemo.release.xcconfig"; path = "Target Support Files/Pods-AdaptiveCardsDemo/Pods-AdaptiveCardsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CC74DD8EA50A3C4F99AB4859 /* Pods_AdaptiveCardsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdaptiveCardsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1769570DAE9C0F30EC0DE0F1 /* Pods_AdaptiveCardsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2ECFFDD6D10F33B6E85F6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05B8CB8337AC19F9E736E340 /* Pods-AdaptiveCardsDemo.debug.xcconfig */,
+				31774C032B900AA521DD766F /* Pods-AdaptiveCardsDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2154700724135C47005BEFB0 = {
 			isa = PBXGroup;
 			children = (
 				2154701224135C47005BEFB0 /* AdaptiveCardsDemo */,
 				2154701124135C47005BEFB0 /* Products */,
+				0D2ECFFDD6D10F33B6E85F6A /* Pods */,
+				F0DCB1B841E7D2C2AD06EA82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +75,7 @@
 		2154701224135C47005BEFB0 /* AdaptiveCardsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2154702A24135F7F005BEFB0 /* host_config.json */,
 				2154701324135C47005BEFB0 /* AppDelegate.swift */,
 				2154701524135C47005BEFB0 /* SceneDelegate.swift */,
 				2154701724135C47005BEFB0 /* ViewController.swift */,
@@ -63,8 +83,17 @@
 				2154701C24135C49005BEFB0 /* Assets.xcassets */,
 				2154701E24135C49005BEFB0 /* LaunchScreen.storyboard */,
 				2154702124135C49005BEFB0 /* Info.plist */,
+				2154702724135EDA005BEFB0 /* AdaptiveCardsDemo-Bridging-Header.h */,
 			);
 			path = AdaptiveCardsDemo;
+			sourceTree = "<group>";
+		};
+		F0DCB1B841E7D2C2AD06EA82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC74DD8EA50A3C4F99AB4859 /* Pods_AdaptiveCardsDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2154702424135C49005BEFB0 /* Build configuration list for PBXNativeTarget "AdaptiveCardsDemo" */;
 			buildPhases = (
+				2FB0EC0392EA2E78EAE96728 /* [CP] Check Pods Manifest.lock */,
 				2154700C24135C47005BEFB0 /* Sources */,
 				2154700D24135C47005BEFB0 /* Frameworks */,
 				2154700E24135C47005BEFB0 /* Resources */,
+				AC16332E3169531F933E6112 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,6 +129,7 @@
 				TargetAttributes = {
 					2154700F24135C47005BEFB0 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -127,10 +159,53 @@
 				2154702024135C49005BEFB0 /* LaunchScreen.storyboard in Resources */,
 				2154701D24135C49005BEFB0 /* Assets.xcassets in Resources */,
 				2154701B24135C47005BEFB0 /* Main.storyboard in Resources */,
+				2154702B24135F7F005BEFB0 /* host_config.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FB0EC0392EA2E78EAE96728 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdaptiveCardsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC16332E3169531F933E6112 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdaptiveCardsDemo/Pods-AdaptiveCardsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdaptiveCardsDemo/Pods-AdaptiveCardsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdaptiveCardsDemo/Pods-AdaptiveCardsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2154700C24135C47005BEFB0 /* Sources */ = {
@@ -281,8 +356,10 @@
 		};
 		2154702524135C49005BEFB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05B8CB8337AC19F9E736E340 /* Pods-AdaptiveCardsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AdaptiveCardsDemo/Info.plist;
@@ -293,6 +370,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmts.AdaptiveCardsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdaptiveCardsDemo/AdaptiveCardsDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +379,10 @@
 		};
 		2154702624135C49005BEFB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31774C032B900AA521DD766F /* Pods-AdaptiveCardsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AdaptiveCardsDemo/Info.plist;
@@ -312,6 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmts.AdaptiveCardsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdaptiveCardsDemo/AdaptiveCardsDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
